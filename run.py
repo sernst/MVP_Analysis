@@ -8,6 +8,11 @@ from __future__ import \
 
 import pandas as pd
 
+from pyaid.file.FileUtils import FileUtils
+
+FileUtils.addToSysPath(
+    FileUtils.makePathFromFile(__file__, 'src', 'mlb'))
+
 import mlb
 from mlb.analysis import evolution
 
